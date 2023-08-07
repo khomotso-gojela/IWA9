@@ -71,7 +71,7 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = parseFloat(tax['913']) / 100
+const taxAsDecimal = parseInt(tax['913']) / 100
 const startingAfterTax = salary - (salary * taxAsDecimal)
 const type = `${size}-${lodging}`
 const balance = startingAfterTax - expenses.transport - expenses.food - rent[type]
